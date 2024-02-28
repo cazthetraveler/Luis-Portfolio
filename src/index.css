@@ -1,0 +1,628 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root {
+  --black: #1C1C1C;
+  --white: #F2F2F2;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+/* Header stuff */
+
+header {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .25rem;
+}
+
+header h1 {
+  display: none;
+}
+
+#nav-button {
+  border: none;
+  background-color: inherit;
+  padding: 1rem;
+  color: var(--black);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+#nav-button:active {
+  outline: 1px solid var(--black);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+#social-links {
+  display: flex;
+  font-size: 1.75rem;
+}
+
+#social-links i {
+  padding: .5rem;
+  color: var(--black);
+  transition: 0.3s;
+}
+
+#social-links i:hover {
+  color: var(--white);
+}
+
+/* Navigation stuff :PP */
+
+nav {
+  opacity: 0;
+  overflow: hidden;
+  max-height: 0;
+  font-family: "Open Sans", sans-serif;
+  /* transition: opacity .5s ease, max-height 0.5s ease; */
+}
+
+nav.active {
+  opacity: 1;
+  max-height: 500px;
+  transition: opacity .5s ease, max-height 0.5s ease;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+nav ul li {
+  list-style-type: none;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+nav ul li a {
+  color: var(--black);
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: gray;
+}
+
+.active-link {
+  color: gray;
+}
+
+/* main */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: .5rem 1rem;
+  margin: 1rem 0rem;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Home Page */
+
+#home-page {
+  font-family: "Open Sans", sans-serif;
+}
+
+#title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#home-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#home-page h1 {
+  font-size: 3rem;
+  margin-bottom: .5rem;
+}
+
+#home-page h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: gray;
+}
+
+#home-page img {
+  height: 250px;
+  width: 250px;
+  border-radius: 100%;
+  margin: 1rem 0;
+}
+
+#about-me {
+  align-self: start;
+  width: 100%;
+}
+
+#about-me h2, #skills h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: var(--black);
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#about-me p {
+  font-size: 1.1rem;
+  text-indent: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+#skills h3 {
+  font-size: 1.5rem;
+}
+
+#skills ul {
+  margin-bottom: 1.25rem;
+}
+
+/* Contact Page */
+
+#contact-page h1 {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  width: 90%;
+  padding: 1rem;
+  text-align: center;
+}
+
+.contacts h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.contacts div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem
+}
+
+.contacts i {
+  margin-right: 1.25rem;
+}
+
+.socials i {
+  font-size: 2rem;
+  color: var(--black);
+  transition: 0.3s;
+}
+
+.socials i:hover {
+  color: gray;
+}
+
+/* Project Card */
+
+.project-display {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project-card {
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+
+.project-card img {
+  height: 400px;
+  width: 400px;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: var(--black);
+  transition: 0.3s ease;
+}
+
+.project-card:hover .overlay {
+  opacity: 1;
+}
+
+.project-card figcaption {
+  width: 100%;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: var(--white);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+}
+
+.project-links a {
+  color: var(--white);
+  font-size: 2rem;
+  transition: 0.3s ease;
+}
+
+.project-links a:hover {
+  color: gray;
+}
+
+/* Project Pages */
+
+#web-dev-page h1, #graphic-design-page h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+#web-dev-page, #graphic-design-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Footer things */
+
+footer {
+  background-color: var(--black);
+  padding: 2rem 1rem;
+  color: var(--white);
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  margin-top: 7rem;
+}
+
+/* TABLET SCREEN */
+
+@media (min-width: 768px) {
+
+  header {
+    padding: .5rem;
+  }
+
+  /* Nav stuff */
+
+  #nav-button {
+    font-size: 2rem;
+  }
+  
+  #social-links {
+    font-size: 2rem;
+  }
+
+  nav ul li {
+    font-size: 2rem;
+  }
+
+  /* main */
+
+  main {
+    padding: .5rem 2rem;
+  }
+
+  /* Home Page */
+
+  #home-page {
+    font-family: "Open Sans", sans-serif;
+  }
+
+  #home-page h1 {
+    font-size: 4rem;
+    margin-bottom: .5rem;
+  }
+
+  #home-page h2 {
+    font-size: 1.75rem;
+  }
+
+  #home-page img {
+    height: 350px;
+    width: 350px;
+    margin: 1.5rem 0;
+  }
+
+  #about-me h2, #skills h2 {
+    text-align: center;
+    font-size: 2.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  #about-me p {
+    font-size: 1.25rem;
+    text-indent: 2.25rem;
+    margin-bottom: 1.75rem;
+  }
+
+  #skills h3 {
+    font-size: 2rem;
+  }
+
+  #skills ul {
+    margin-bottom: 1.75rem;
+  }
+
+  /* Contact Page */
+
+  .contacts {
+    margin-bottom: 2rem;
+    width: 80%;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  /* Project Card */
+
+  .project-display {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .project-card {
+    height: 300px;
+    width: 300px;
+  }
+
+  .project-card img {
+    height: 300px;
+    width: 300px;
+  }
+}
+
+/* Desktop Screen */
+
+@media (min-width: 992px) {
+
+  header {
+    padding: .75rem;
+  }
+
+  /* Nav stuff */
+
+  #nav-button {
+    font-size: 2rem;
+  }
+  
+  #social-links {
+    font-size: 2rem;
+  }
+
+  nav ul li {
+    font-size: 2rem;
+  }
+
+  /* Contact Page */
+
+  #contact-page h1 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+
+  .contacts h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .contacts div {
+    font-size: 1.5rem
+  }
+
+  .contacts i {
+    margin-right: 1.5rem;
+  }
+
+  .socials i {
+    font-size: 2.25rem;
+  }
+
+  /* Project Card */
+
+  .project-display {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .project-card {
+    height: 400px;
+    width: 400px;
+  }
+
+  .project-card img {
+    height: 400px;
+    width: 400px;
+  }
+}
+
+/* Larger Desktop Screen */
+
+@media (min-width: 1200px) {
+  /* Header stuff */
+
+  header {
+    padding: .25rem 2rem;
+  }
+
+  header h1 {
+    display: block;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+  }
+
+  #nav-button {
+    display: none;
+  }
+
+  #social-links {
+    font-size: 2rem;
+  }
+
+  /* Navigation stuff :PP */
+
+  nav {
+    opacity: 1;
+    overflow: visible;
+    max-height: 500px;
+    padding: 1.25rem;
+    /* border-bottom: 1px solid var(--black); */
+    background-color: white;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 99;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  nav ul li {
+    list-style-type: none;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  /* main */
+
+  main {
+    align-items: center;
+    padding: .5rem 1rem;
+  }
+
+  /* Home Page */
+
+  #home-page {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  #home-page h1 {
+    font-size: 3rem;
+    margin-bottom: .5rem;
+  }
+
+  #home-page h2 {
+    font-size: 1.5rem;
+  }
+
+  #home-page img {
+    height: 500px;
+    width: 500px;
+  }
+
+  #title {
+    width: 45%;
+  }
+
+  #about-me {
+    width: 45%;
+  }
+
+  #about-me h2, #skills h2 {
+    font-size: 2.75rem;
+    margin-bottom: 3rem;
+  }
+
+  #skills-sec {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+  }
+
+  #skills h3 {
+    margin-bottom: 1rem;
+  }
+
+  #skills ul {
+    margin-bottom: 0rem;
+  }
+
+  /* Project Card */
+
+  .project-display {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 80%;
+  }
+
+  .project-card {
+    height: 300px;
+    width: 300px;
+  }
+
+  .project-card img {
+    height: 300px;
+    width: 300px;
+  }
+
+  .project-card figcaption {
+    font-size: 2rem;
+  }
+
+  .project-links {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+  }
+
+  /* Project Pages */
+
+  #web-dev-page h1, #graphic-design-page h1 {
+    margin-bottom: 3rem;
+  }
+}
+
+/* Largerer Desktop Screen */
+
+@media (min-width: 1400px) {
+
+  /* Project Card */
+
+  .project-display {
+    gap: 4rem;
+    width: 60%;
+  }
+}
