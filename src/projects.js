@@ -130,6 +130,22 @@ const projects = [
       alt: "thumbnail for hobby shop project",
     },
   },
+  {
+    id: 10,
+    category: "graphic-design",
+    title: "Venturaline Email Blasts",
+    description:
+      "Email blasts I've worked on for Ventura Promotional Products and Time Products International.",
+    links: {
+      repo: "",
+      deployed:
+        "https://www.behance.net/gallery/192921927/Venturaline-Email-Blasts",
+    },
+    image: {
+      source: "/project-images/ventura-blasts-thumb.png",
+      alt: "thumbnail for ventura blasts",
+    },
+  },
 ];
 
 export default projects;
