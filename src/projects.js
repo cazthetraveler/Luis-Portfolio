@@ -116,6 +116,20 @@ const projects = [
       alt: "thumbnail for xtal clothing co logo design project",
     },
   },
+  {
+    id: 9,
+    category: "web-dev",
+    title: "Hobby E-Commerce",
+    description: "Final Project: ecommerce site.",
+    links: {
+      repo: "https://github.com/cazthetraveler/Hobby-E-Commerce",
+      deployed: "https://hobby-ecommerce.onrender.com/",
+    },
+    image: {
+      source: "/project-images/hobby-thumb.png",
+      alt: "thumbnail for hobby shop project",
+    },
+  },
 ];
 
 export default projects;
