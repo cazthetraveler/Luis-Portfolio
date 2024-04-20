@@ -162,6 +162,20 @@ const projects = [
       alt: "thumbnail for ventura product photography",
     },
   },
+  {
+    id: 12,
+    category: "photography",
+    title: "Ariela Headshots",
+    description: "My first headshot photography session.",
+    links: {
+      repo: "",
+      deployed: "https://www.behance.net/gallery/196651709/Ariela-Headshots",
+    },
+    image: {
+      source: "/project-images/ariela-headshot-thumb.jpg",
+      alt: "thumbnail for ariela's headshots",
+    },
+  },
 ];
 
 export default projects;
