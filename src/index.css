@@ -286,16 +286,32 @@ main {
 /* Project Pages */
 
 #web-dev-page h1,
-#graphic-design-page h1 {
+#graphic-design-page h1,
+#photography-page h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
 }
 
 #web-dev-page,
-#graphic-design-page {
+#graphic-design-page,
+#photography-page {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#photography-page p {
+  margin-bottom: 1rem;
+}
+
+#unsplash-link {
+  color: var(--black);
+  font-weight: 600;
+}
+
+#unsplash-link:hover {
+  color: var(--white);
+  transition: 0.3s;
 }
 
 /* Footer things */

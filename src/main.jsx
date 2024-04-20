@@ -1,16 +1,16 @@
-import ReactDOM from 'react-dom/client';
-import {createBrowserRouter, RouterProvider} from "react-router-dom";
+import ReactDOM from "react-dom/client";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import "./index.css"
+import "./index.css";
 
-import App from './App.jsx';
+import App from "./App.jsx";
 import Error from "./pages/Error";
 
 import Home from "./pages/Home.jsx";
 import GraphicDesign from "./pages/GraphicDesign.jsx";
+import Photography from "./pages/Photography.jsx";
 import WebDev from "./pages/WebDev.jsx";
 import Contact from "./pages/Contact.jsx";
-
 
 const router = createBrowserRouter([
   {
@@ -20,22 +20,26 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Home />
+        element: <Home />,
       },
       {
         path: "/graphic-design",
-        element: <GraphicDesign />
+        element: <GraphicDesign />,
+      },
+      {
+        path: "/photography",
+        element: <Photography />,
       },
       {
         path: "/web-dev",
-        element: <WebDev />
+        element: <WebDev />,
       },
       {
         path: "/contact",
-        element: <Contact />
-      }
-    ]
-  }
+        element: <Contact />,
+      },
+    ],
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(

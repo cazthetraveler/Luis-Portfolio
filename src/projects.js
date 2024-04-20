@@ -146,6 +146,22 @@ const projects = [
       alt: "thumbnail for ventura blasts",
     },
   },
+  {
+    id: 11,
+    category: "photography",
+    title: "Venturaline Product Photography",
+    description:
+      "Product photos I've taken for Ventura Promotional Products and Time Products International.",
+    links: {
+      repo: "",
+      deployed:
+        "https://www.behance.net/gallery/196652685/Venturaline-Product-Photography",
+    },
+    image: {
+      source: "/project-images/ventura-product-photo-thumb.png",
+      alt: "thumbnail for ventura product photography",
+    },
+  },
 ];
 
 export default projects;
