@@ -187,7 +187,7 @@ const projects = [
         "https://www.behance.net/gallery/198232625/Bloom-Petal-Floristry-Logo-Design-Project",
     },
     image: {
-      source: "/project-images/bloom-petal-logo-thumb.jpg",
+      source: "/project-images/bloom-petal-logo-thumb.png",
       alt: "thumbnail for bloom and petal logo design",
     },
   },
@@ -201,7 +201,7 @@ const projects = [
       deployed: "https://bloom-and-petal-floristry.onrender.com/",
     },
     image: {
-      source: "/project-images/bloom-petal-mern-thumb.jpg",
+      source: "/project-images/bloom-petal-mern-thumb.png",
       alt: "thumbnail for bloom and petal mern stack website",
     },
   },
