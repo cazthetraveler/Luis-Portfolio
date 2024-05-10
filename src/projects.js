@@ -176,6 +176,35 @@ const projects = [
       alt: "thumbnail for ariela's headshots",
     },
   },
+  {
+    id: 13,
+    category: "graphic-design",
+    title: "Bloom & Petal Floristy Logo Design",
+    description: "Logo design project.",
+    links: {
+      repo: "",
+      deployed:
+        "https://www.behance.net/gallery/198232625/Bloom-Petal-Floristry-Logo-Design-Project",
+    },
+    image: {
+      source: "/project-images/bloom-petal-logo-thumb.jpg",
+      alt: "thumbnail for bloom and petal logo design",
+    },
+  },
+  {
+    id: 14,
+    category: "web-dev",
+    title: "Bloom & Petal Floristy MERN Stack Website",
+    description: "MERN stack project.",
+    links: {
+      repo: "https://github.com/cazthetraveler/Bloom-and-Petal-Floristry",
+      deployed: "https://bloom-and-petal-floristry.onrender.com/",
+    },
+    image: {
+      source: "/project-images/bloom-petal-mern-thumb.jpg",
+      alt: "thumbnail for bloom and petal mern stack website",
+    },
+  },
 ];
 
 export default projects;
