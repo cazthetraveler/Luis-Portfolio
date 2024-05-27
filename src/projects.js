@@ -205,6 +205,21 @@ const projects = [
       alt: "thumbnail for bloom and petal mern stack website",
     },
   },
+  {
+    id: 15,
+    category: "graphic-design",
+    title: "Ventura Summer Catalog 2024",
+    description: "Ventura Promotional Products Summer Catalog for 2024.",
+    links: {
+      repo: "",
+      deployed:
+        "https://www.behance.net/gallery/199613781/Ventura-Summer-Catalog-2024?",
+    },
+    image: {
+      source: "/project-images/ventura-summer-catalog-2024-thumb.png",
+      alt: "thumbnail for ventura summer catalog 2024",
+    },
+  },
 ];
 
 export default projects;
