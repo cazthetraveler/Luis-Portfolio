@@ -7,7 +7,7 @@ function Home() {
           <h2>Graphic Designer, Photographer, Web Developer</h2>
         </section>
         <section>
-          <img src="/luis.jpg" />
+          <img src="/luis3.jpg" />
         </section>
       </section>
       <section id="about-me">
@@ -17,16 +17,16 @@ function Home() {
           web developer! This is my way of saying that I am now a triple threat.
         </p>
         <p>
-          I've attended and graduated from Del Rio High School in 2019, where I
-          first was introduced to graphic design. After a year into junior
-          college, I decided to go to Texas State Technical College, where I
-          then received my Associate's of Applied Science in Digital Media
-          Design in 2022. Here is where I got my start into photography and
-          videography skills, and an introduction to web development. A year
-          after graduating, I decided to learn more about web development, so I
-          enrolled and finished a 6-month bootcamp course from the University of
-          Texas at San Antonio. I completed the course in February 2024, where I
-          will soon receive my certificate of completion.
+          I&apos;ve attended and graduated from Del Rio High School in 2019,
+          where I first was introduced to graphic design. After a year into
+          junior college, I decided to go to Texas State Technical College,
+          where I then received my Associate&apos;s of Applied Science in
+          Digital Media Design in 2022. Here is where I got my start into
+          photography and videography skills, and an introduction to web
+          development. A year after graduating, I decided to learn more about
+          web development, so I enrolled and finished a 6-month bootcamp course
+          from the University of Texas at San Antonio. I completed the course in
+          February 2024, where I will soon receive my certificate of completion.
         </p>
         <p>
           Currently, I am working as a graphic designer at Ventura Promotional
