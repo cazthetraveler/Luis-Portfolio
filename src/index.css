@@ -220,7 +220,7 @@ main {
 
 .project-display {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   gap: 2rem;
 }
 
@@ -407,7 +407,7 @@ footer {
 
   .project-display {
     justify-content: center;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
   }
 
@@ -471,7 +471,7 @@ footer {
 
   .project-display {
     justify-content: center;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
   }
 
@@ -598,7 +598,7 @@ footer {
 
   .project-display {
     justify-content: center;
-    flex-direction: row;
+    flex-direction: row-reverse;
     flex-wrap: wrap;
     gap: 3rem;
     width: 80%;

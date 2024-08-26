@@ -220,6 +220,20 @@ const projects = [
       alt: "thumbnail for ventura summer catalog 2024",
     },
   },
+    {
+    id: 16,
+    category: "web-dev",
+    title: "Photography Site",
+    description: "My photography portfolio website to showcase my works as a photographer.",
+    links: {
+      repo: "https://github.com/cazthetraveler/Luis-Olmos-Photography",
+      deployed: "https://luisolmosphotography.netlify.app/",
+    },
+    image: {
+      source: "https://luisolmosphotography.netlify.app/logo-icon.png",
+      alt: "luis olmos photography logo",
+    },
+  },
 ];
 
 export default projects;
