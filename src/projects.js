@@ -220,17 +220,48 @@ const projects = [
       alt: "thumbnail for ventura summer catalog 2024",
     },
   },
-    {
+  {
     id: 16,
     category: "web-dev",
     title: "Photography Site",
-    description: "My photography portfolio website to showcase my works as a photographer.",
+    description:
+      "My photography portfolio website to showcase my works as a photographer.",
     links: {
       repo: "https://github.com/cazthetraveler/Luis-Olmos-Photography",
       deployed: "https://luisolmosphotography.netlify.app/",
     },
     image: {
       source: "https://luisolmosphotography.netlify.app/logo-icon.png",
+      alt: "luis olmos photography logo",
+    },
+  },
+  {
+    id: 17,
+    category: "graphic-design",
+    title: "Coastal Interiors Logo Design",
+    description: "Logo design practice for an interior company.",
+    links: {
+      repo: "",
+      deployed:
+        "https://www.behance.net/gallery/202891313/Coastal-Interiors-Logo-Case-Study",
+    },
+    image: {
+      source: "/project-images/coastal-logo-thumb.png",
+      alt: "luis olmos photography logo",
+    },
+  },
+  {
+    id: 18,
+    category: "graphic-design",
+    title: "Coastal Interiors UI Design",
+    description: "UI design practice for an interior company.",
+    links: {
+      repo: "",
+      deployed:
+        "https://www.behance.net/gallery/202891749/Coastal-Interiors-UI-Design",
+    },
+    image: {
+      source: "/project-images/coastal-ui-thumb.png",
       alt: "luis olmos photography logo",
     },
   },
