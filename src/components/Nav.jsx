@@ -27,7 +27,7 @@ function Nav({ isNavVisible, closeNav }) {
         <li>
           <Link
             className={currentPage === "/photography" ? "active-link" : ""}
-            to="/photography"
+            to="https://luisolmosphotography.netlify.app/"
             onClick={() => closeNav()}
           >
             PHOTOGRAPHY
