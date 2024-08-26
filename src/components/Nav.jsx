@@ -29,6 +29,7 @@ function Nav({ isNavVisible, closeNav }) {
             className={currentPage === "/photography" ? "active-link" : ""}
             to="https://luisolmosphotography.netlify.app/"
             onClick={() => closeNav()}
+            target="_blank"
           >
             PHOTOGRAPHY
           </Link>
